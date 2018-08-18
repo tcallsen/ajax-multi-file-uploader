@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AJAX Multi File Uploader</title>
+
+    <!-- Sytle Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/uploader.css" />
+
+  </head>
+  <body>
+  
+    <h1>AJAX Multi File Uploader</h1>
+
+    <form id="file-upload-form" action="upload-backend.php" method="post" enctype="multipart/form-data"> 
+        
+      <input id="file-upload" name="fileUpload" type="file" multiple="multiple" />
+
+      <input id="submit-button" type="submit" value="Submit"/> 
+
+    </form>
+
+    <div>
+
+    <ul id="selected-files-list">
+      <!-- populated by JavaScript on file input change event -->
+    </ul>
+
+    </div>
+
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/AsyncSequenceIterator.js"></script>
+    <script type="text/javascript" src="js/uploader.js"></script>
+    
+  </body>
+</html>
